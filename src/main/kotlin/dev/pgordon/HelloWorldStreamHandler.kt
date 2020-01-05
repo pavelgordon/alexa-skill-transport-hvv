@@ -7,6 +7,7 @@ import com.amazon.ask.Skills
 
 val skill: Skill = Skills.standard()
     .addRequestHandlers(
+        TrainScheduleIntentHandler(),
         HelloWorldIntentHandler(),
         LaunchRequestHandler()
     ).build()
